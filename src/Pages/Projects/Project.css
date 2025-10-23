@@ -1,0 +1,181 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+}
+
+.project-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+
+.project-title h2{
+    font-size: 30px;
+    width: auto;
+}
+
+.project-title p{
+    width: auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.project-cards img{
+    padding: 2px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.project-cards{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2px;
+    margin: 8px;
+    
+}
+
+.project-card{
+    background-color: rgba(128, 128, 128, 0.13);
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.project-cards p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.project-card h4{
+    font-size: 18px;
+}
+
+
+.project-cards ul{
+    position: relative;
+    right: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-cards li{
+    font-size: 12px;
+    font-weight: 300;
+    padding: 4px 15px 4px 15px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    list-style: none;
+    margin: 5px;
+}
+
+.project-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-btn button{
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-btn a{
+    text-decoration: none;
+    color: #dcd95e;
+}
+
+.normal-btn{
+    background-color: #dcd95e;
+    
+    margin: 5px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #dcda5e4f;
+    border-radius: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.normal-btn a {
+    color: white;
+}
+
+.transparent-btn{
+    background-color: transparent;
+    color:#dcd95e ;
+    margin: 5px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #dcda5e4f;
+    border-radius: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Device View */
+@media (min-width: 1024px) {
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        padding: 15px;
+    }
+
+    .project-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-title h2{
+        font-size: 50px;
+        width: auto;
+    }
+
+    .project-title p{
+        width: 50%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .project-cards{
+        width: 50vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        /* padding: 20px; */
+        margin: 0;
+    }
+    
+    .project-cards img{
+        padding: 2px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .project-card{
+        background-color: rgba(128, 128, 128, 0.13);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,123 @@
+/* Mobile first design */
+.stacks ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: start;
+    border-bottom: 1px solid #dcd95e;
+    border-top: 1px solid #dcd95e;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 0px;
+}
+
+.stacks li{
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    width: 40%;
+    margin: 10px;
+    padding: 5px;
+    line-height: 10px;
+    
+    /* CSS scroll-triggered animation */
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    opacity: 0;
+}
+
+/* Staggered delay for each item */
+.stacks li:nth-child(1) { animation-delay: 0s; }
+.stacks li:nth-child(2) { animation-delay: 0.1s; }
+.stacks li:nth-child(3) { animation-delay: 0.2s; }
+.stacks li:nth-child(4) { animation-delay: 0.3s; }
+.stacks li:nth-child(5) { animation-delay: 0.4s; }
+.stacks li:nth-child(6) { animation-delay: 0.5s; }
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stacks h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stacks p{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Tablet view */
+@media (min-width: 768px) {
+    
+    .stacks p{
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .stacks li{
+        width: 20%;
+        margin: 40px;
+        padding: 5px;
+        line-height: 20px;
+    }
+
+    .stacks h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
+/* desktop view */
+@media (min-width: 1024px) {
+
+    .stacks{
+        padding-top: 25px;
+        position: relative;
+        width: 100%;
+    }
+
+
+    .stacks ul{
+        margin-left: 35rem;
+        margin-right: 30rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        border-bottom: 1px solid #dcd95e;
+        border-top: 1px solid #dcd95e;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 0px;
+        padding: 10px;
+    }
+    
+    .stacks p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .stacks li{
+        position: relative;
+        left: 25px;
+        margin: 5px;
+        padding: 10px;
+        line-height: 20px;
+    }
+
+    .stacks h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+}
+

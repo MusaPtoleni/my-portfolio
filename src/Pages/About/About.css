@@ -1,0 +1,106 @@
+.about{
+    border-bottom: none;
+}
+
+
+.about-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-title img{
+    height: auto;
+    width: 85%;
+    margin: auto;
+}
+
+
+.journey{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.journey p{
+    font-family: 'Roboto',sans-serif;
+    font-weight:300;
+    line-height: 15px;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 30px;
+    background-color: black;
+}
+
+details summary{
+    list-style-position: inside;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid #dcda5eb7;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::marker {
+    font-size: 30px;
+    background-color: black;
+}
+
+summary::before {
+    content: '+';
+    position: absolute;
+    right: 10px;
+}
+
+details[open] summary::before {
+    content: '-'; 
+}
+
+
+@media (min-width: 1024px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        border-bottom: none;
+        width: 100%;
+    }
+    
+    .about-title{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .journey p{
+        font-family: 'Roboto',sans-serif;
+        line-height: 35px;
+        font-size: 22px;
+        font-weight: 300;
+        padding: 15px;
+        border-radius: 10px;
+        width: 49vw;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .about-title img{
+        height: 90vh;
+        width: 80%;
+        margin: auto;
+    }
+
+    details summary{
+        width: 50vw;
+    }
+}
