@@ -1,0 +1,68 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 56px;
+    line-height: 3.5rem;
+}
+
+.title p{
+    font-size: 22px;
+    margin: 30px;
+}
+
+.socialMedia{
+    color: #dcd95e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 1px solid rgb(255, 255, 255);
+}
+
+/* Tables and Up */
+@media (min-width: 768px) {
+    
+    .title p{
+        font-size: 30px;
+        margin: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+   
+    .home-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .home-page img{
+        width: 520px;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        padding: 15px;
+    }
+
+    .title h1{
+        font-size: 65px;
+    }
+
+    .title p{
+        font-size: 35px;
+    }
+}

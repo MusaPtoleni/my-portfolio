@@ -1,0 +1,150 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.13);
+}
+
+.navbar img{
+    position: relative;
+    left: 6px;
+    width: 100px;
+    height: 40px;
+
+}
+
+.links ul{
+    display: none;
+    flex-direction: row;
+}
+
+.links li{
+    margin: 7px;
+    color: #dcd95e;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.icons{
+    position: relative;
+    right: 1rem;
+    font-size: 45px;
+    color: #dcd95e ;
+    cursor: pointer;
+}
+
+.nav-socials{
+    display: none;
+}
+
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    
+    .links ul{
+        position: relative;
+        left: 12rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .icons{
+        position: relative;
+        right: 1rem;
+        font-size: 45px;
+        color: #dcd95e ;
+        cursor: pointer;
+    }
+
+
+    .links{
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .links li{
+        display: none;
+    }
+    
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .navbar{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: auto;
+        padding: 2px;
+    }
+
+
+    .navbar li{
+        display: flex;
+        position: relative;
+        right: 3rem;
+        margin: 11px;
+        margin-right: 20px;
+        padding:2px 15px 2px 15px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .navbar li:hover{
+        color: white;
+        background-color: #dcd95e;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    #git{
+        margin-right: 35px;
+    }
+
+    #linkedin{
+        margin-right: 35px;
+    }
+
+    .navbar a{
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 22px;
+        padding: 15px;
+        color: #dcd95e;
+    }
+
+    .nav-socials a{
+        text-decoration: none;
+        color: #dcd95e;
+    }
+
+    .nav-socials a:hover{
+        color: white;
+    }
+
+
+}
