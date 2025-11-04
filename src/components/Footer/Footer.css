@@ -2,7 +2,11 @@ footer{
     width: auto;
     height: 100%;
     color: white;
+<<<<<<< HEAD
     background-color: black;
+=======
+    background-color: rgba(128, 128, 128, 0.13);
+>>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
     font-size: 10px;
     padding: 2px;
     text-align: center;

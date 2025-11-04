@@ -1,7 +1,10 @@
 .menu{
     display: none;
     position: absolute;
+<<<<<<< HEAD
     z-index: 10;
+=======
+>>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
     flex-direction: column;
     right: 0;
     top: 4.5rem;

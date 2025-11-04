@@ -24,7 +24,11 @@ export default function Menu(props) {
         </li>
         <li>
             <MdContactPage className='menuIcons'/>
+<<<<<<< HEAD
             <Link to='/contact'>Contact</Link> 
+=======
+            <Link to='contact'>Contact</Link> 
+>>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
         </li>
       </ul>
       <div className='socials'>
