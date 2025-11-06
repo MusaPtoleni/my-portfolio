@@ -9,6 +9,7 @@
     border-top: 1px solid #dcd95e;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 0px;
+    padding-bottom: 10px;
 }
 
 .stacks li{
@@ -25,6 +26,27 @@
     animation-range: entry 0% cover 30%;
     opacity: 0;
 }
+
+
+.stack-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.stack-title h1{
+    font-size: 45px;
+}
+
+.stack-title p{
+    font-size: 25px;
+    text-align: center;
+}
+
 
 /* Staggered delay for each item */
 .stacks li:nth-child(1) { animation-delay: 0s; }
@@ -46,12 +68,12 @@
     }
 }
 
-.stacks h1{
+.stacks h2{
     font-size: 20px;
     font-weight: 600;
 }
 
-.stacks p{
+.box p{
     font-size: 12px;
     font-weight: 300;
 }
@@ -59,7 +81,7 @@
 /* Tablet view */
 @media (min-width: 768px) {
     
-    .stacks p{
+    .box p{
         font-size: 22px;
         font-weight: 300;
     }
@@ -112,7 +134,7 @@
         padding: 10px 35px 10px 15px;
     }
     
-    .stacks p{
+    .box p{
         font-size: 15px;
         font-weight: 400;
     }
@@ -128,6 +150,14 @@
     .stacks h1{
         font-size: 28px;
         font-weight: 600;
+    }
+
+    .stack-title h1{
+        font-size: 50px;
+    }
+
+    .stack-title p{
+        font-size: 25px;
     }
 }
 

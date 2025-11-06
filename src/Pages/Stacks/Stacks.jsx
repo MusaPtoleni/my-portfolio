@@ -20,11 +20,15 @@ function Stacks(){
 
     return(
        <section className='stacks'>
-           <ul>
-               {myStacks.map((stacks) => {
+            <div className='stack-title'>
+                <h1>My Tech Stacks</h1>
+                <p id='tools'>Tools I use to turn ideas into polished, production-ready products.</p>
+            </div>
+            <ul>
+                {myStacks.map((stacks) => {
                     return(
                         <li key={stacks.key} className="box">
-                            <h1>{stacks.stack}</h1>
+                            <h2>{stacks.stack}</h2>
                             <p>{stacks.experience}</p> 
                         </li>
                     )
