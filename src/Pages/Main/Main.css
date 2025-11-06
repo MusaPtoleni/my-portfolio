@@ -1,6 +1,7 @@
 .home-page{
     display: flex;
     flex-direction: column;
+    gap: 30px;
     font-family: "Roboto", sans-serif;
     text-align: center;
 }
@@ -26,6 +27,17 @@
     border-radius: 1px solid rgb(255, 255, 255);
 }
 
+.images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+.images img{
+    background-color: rgba(14, 14, 14, 0.288);
+}
+
 /* Tables and Up */
 @media (min-width: 768px) {
     
@@ -33,6 +45,7 @@
         font-size: 30px;
         margin: 30px;
     }
+
 }
 
 @media (min-width: 1024px) {
@@ -65,4 +78,5 @@
     .title p{
         font-size: 35px;
     }
+
 }

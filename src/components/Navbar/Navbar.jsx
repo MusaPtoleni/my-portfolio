@@ -25,11 +25,7 @@ function Navbar() {
         <ul>
           <li><Link to='/about'>About</Link></li>
           <li><a href='https://github.com/MusaPtoleni?tab=repositories'>Git Repo</a></li>
-<<<<<<< HEAD
-          <li><Link to='/contact'>Contact</Link></li>
-=======
-          {/* <li><Link to='/contact'>Contact</Link></li> */}
->>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
+          <li><Link to='/get-in-touch'>Contact</Link></li>
         </ul>
       </nav>
 {/* icons */}

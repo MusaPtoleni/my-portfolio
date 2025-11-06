@@ -1,12 +1,13 @@
 .form-title{
     font-family: 'Roboto',sans-serif;
     text-align: center;
-    margin: 30px;
+    margin: 0;
 }
 
 .form-title h2{
-    font-size: 30px;
+    font-size: 45px;
 }
+
 
 .form{
     font-family: 'Roboto', sans-serif;
@@ -35,6 +36,10 @@
     border-radius: 5px;
 }
 
+.form label{
+    text-align: start;
+}
+
 .form-btn{
     background-color: #dcd95e;
     margin: 5px;
@@ -52,6 +57,7 @@
 }
 
 @media (min-width: 1024px) {
+
     .form-title h2{
         font-size: 45px;
     }
@@ -63,14 +69,11 @@
     .contact{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        padding-bottom: 20px;
+        width: auto;
     }
 
     .form-container{
-        width: 25%;
+        width: 30%;
         background-color: rgb(39, 39, 39);
         border-radius: 10px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -81,7 +84,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
         padding: 15px;
     }
 

@@ -3,7 +3,7 @@ import './Footer.css'
 export default function Footer() {
   return (
     <footer>
-        <p>Copyright &copy; All Rights Reserved</p>
+        <p> Copyright &copy; 2025 Mtech,  All Rights Reserved.</p>
     </footer>
   )
 }

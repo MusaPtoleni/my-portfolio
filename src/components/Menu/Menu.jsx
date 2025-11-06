@@ -15,20 +15,16 @@ export default function Menu(props) {
     <div className='menu' style={{display:flex}}>
       <ul>
         <li>
-            <BiGitRepoForked className='menuIcons'/>
-            <Link to='/git-repo'>Git Repo</Link>
-        </li>
-        <li>
             <IoIosMan className='menuIcons'/>
             <Link to='/about'>About</Link> 
         </li>
         <li>
             <MdContactPage className='menuIcons'/>
-<<<<<<< HEAD
-            <Link to='/contact'>Contact</Link> 
-=======
-            <Link to='contact'>Contact</Link> 
->>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
+            <Link to='/get-in-touch'>Contact</Link> 
+        </li>
+        <li>
+            <BiGitRepoForked className='menuIcons'/>
+            <a to='/https://github.com/MusaPtoleni?tab=repositories'>Git Repo</a>
         </li>
       </ul>
       <div className='socials'>

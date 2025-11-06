@@ -4,6 +4,9 @@ import { FaAddressCard } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { MdOutlineSubject } from "react-icons/md";
 import { MdMessage } from "react-icons/md";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -83,10 +86,11 @@ export default function Contact() {
 
   return (
     <div className="contact">
+      <Navbar/>
       <div className="form-title">
         <h2>Get In Touch</h2>
         <p>I'd love to hear from you. Send me a Mail!</p>
-      </div>
+
 
       {status === "success" && (
         <div className="">
@@ -166,6 +170,8 @@ export default function Contact() {
           )}
         </button>
       </div>
+      </div>
+      <Footer/>
     </div>
   );
 }

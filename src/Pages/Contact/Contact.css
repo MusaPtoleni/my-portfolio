@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-
-
 .contact-page{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 6px;
 }
 
 .contact-page h1 {
@@ -16,26 +13,17 @@
 }
 
 .contact-page img {
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 27px;
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
 .contact-page h4 {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
     text-align: center;
-    max-width: 600px;
-    margin-left: 52px;
-    border-radius: 10px;
     padding: 10px;
     border: none;
-    background-color: #e69a0ee3;
 }
 
 .contact-detail {
@@ -45,8 +33,8 @@
     justify-content: center;
     border-radius: 10px;
     width: auto;
+    margin-right: 15px;
     padding: 10px;
-    margin-top: 15px;
 }
 
 .contact-detail p {
@@ -85,98 +73,16 @@
 
 @media (min-width: 1024px) {
     .contact-page img {
-        width: 30%;
-=======
-.form-title{
-    font-family: 'Roboto',sans-serif;
-    text-align: center;
-    margin: 30px;
-}
-
-.form-title h2{
-    font-size: 30px;
-}
-
-.form{
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-.form-container{
-    padding: 25px;
-    margin: 5px;
-}
-
-.form input{
-    border: 1px solid #dcd95e;
-    border-radius: 10px;
-    padding: 12px;
-}
-
-.form input:focus{
-    border-color: #dcd95e;
-}
-
-.form textarea{
-    border: 1px solid #dcd95e;
-    border-radius: 5px;
-}
-
-.form-btn{
-    background-color: #dcd95e;
-    margin: 5px;
-    padding: 10px 15px 10px 15px;
-    border: 1px solid #dcda5e4f;
-    border-radius: 5px;
-    width: 97%;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-.contactIcons{
-    position: relative;
-    top: 3px;
-}
-
-@media (min-width: 1024px) {
-    .form-title h2{
-        font-size: 45px;
+        width: auto;
+        height: 50vh;
     }
 
-    .form-title p{
-        font-size: 25px;
-    }
-
-    .contact{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        padding-bottom: 20px;
-    }
-
-    .form-container{
-        width: 25%;
-        background-color: rgb(39, 39, 39);
-        border-radius: 10px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-
-    .form-title{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .contact-page h4 {
+        margin-left: 5px;
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif;
         width: 100%;
-        padding: 15px;
-    }
-
-    .form-title p{
-        width: 40%;
->>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
+        border-radius: 20px;
     }
 
 }

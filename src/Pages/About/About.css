@@ -1,9 +1,8 @@
 .about{
-<<<<<<< HEAD
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-bottom: none;
-=======
-    border-bottom: 10px solid rgba(128, 128, 128, 0.13);
->>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
 }
 
 
@@ -13,20 +12,19 @@
     text-align: center;
 }
 
-<<<<<<< HEAD
+.about-title h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+}
+
 .about-title img{
     height: auto;
-    width: 85%;
+    width: 100%;
     margin: auto;
+    margin-top: 10px;
 }
 
-
-=======
-.about-title{
-    font-size: 22px;
-}
-
->>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
 .journey{
     display: flex;
     flex-direction: column;
@@ -36,7 +34,6 @@
 
 .journey p{
     font-family: 'Roboto',sans-serif;
-<<<<<<< HEAD
     font-weight:300;
     line-height: 15px;
     font-size: 15px;
@@ -82,65 +79,43 @@ details[open] summary::before {
     .about{
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-=======
-    font-weight: 200;
-    line-height: 15px;
-    font-size: 25px;
-    padding: 15px;
-    border-radius: 10px;
-    line-height: 30px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-@media (min-width: 1024px) {
-    .about{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
->>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
-        border-bottom: none;
+        height: 100%;
         width: 100%;
     }
     
     .about-title{
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 60%;
     }
 
     .journey p{
         font-family: 'Roboto',sans-serif;
         line-height: 35px;
-<<<<<<< HEAD
         font-size: 22px;
         font-weight: 300;
         padding: 15px;
         border-radius: 10px;
-        width: 49vw;
+        width: 35vw;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
     .about-title img{
-        height: 90vh;
-        width: 80%;
+        height: 50vh;
+        width: 50%;
         margin: auto;
     }
 
     details summary{
-        width: 50vw;
-=======
-        font-size: 25px;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-
-    .about img{
-        height: 100%;
-        width: 40vw;
->>>>>>> 187b0526878f769779babe39399e79e8d7f6fb3e
+        width: 36vw;
     }
 }
